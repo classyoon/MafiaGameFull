@@ -11,7 +11,9 @@ import SwiftUI
 struct MafiaGameFullApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                MafiaMenuView()
+            }
         }
     }
 }
