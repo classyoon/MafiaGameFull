@@ -39,8 +39,8 @@ struct DawnView: View {
             }
             .background {
                 Rectangle()
-                    .stroke(Color(.systemBackground).opacity(0.13), lineWidth: 20)
-                    .background(Rectangle().fill(Color(.secondarySystemGroupedBackground).opacity(0.3)))
+                    .stroke(Color(uiColor: .systemBackground).opacity(0.13), lineWidth: 20)
+                    .background(Rectangle().fill(Color(uiColor: .secondarySystemGroupedBackground).opacity(0.3)))
                     .clipped()
             }
             .onTapGesture {

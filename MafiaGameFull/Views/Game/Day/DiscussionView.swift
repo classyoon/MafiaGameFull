@@ -69,7 +69,7 @@ struct DiscussionView: View {
         .padding()
         .navigationBarBackButtonHidden(true)
         .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
+            ToolbarItem(placement: .automatic) {
                 Button(action: {
                     // Present the pause view as a sheet
                     // Implementation would be in the parent navigation controller

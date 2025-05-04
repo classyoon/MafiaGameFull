@@ -56,7 +56,7 @@ struct ConfirmVoteView: View {
         .padding(30)
         .background(
             RoundedRectangle(cornerRadius: 20)
-                .fill(Color(.systemBackground))
+                .fill(.primary.opacity(0.1))///MARK:WARNING
                 .shadow(radius: 10)
         )
         .foregroundStyle(.primary)

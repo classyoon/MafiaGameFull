@@ -251,7 +251,6 @@ struct SetUpGameView: View {
             .padding()
         }
         .navigationTitle("") // Remove extra title
-        .navigationBarTitleDisplayMode(.inline)
         .alert(isPresented: $viewModel.showError) {
             Alert(
                 title: Text("Error"),

@@ -27,7 +27,7 @@ struct MafiaMenuView: View {
                     .clipped()
                     .overlay {
                         Text("Play")
-                            .foregroundStyle(Color(.systemBackground))
+                            .foregroundStyle(.primary)
                             .font(.title2)
                     }
                     .shadow(color: .black.opacity(0.5), radius: 8, x: 0, y: 4)
@@ -42,7 +42,7 @@ struct MafiaMenuView: View {
                     .clipped()
                     .overlay {
                         Text("Stats")
-                            .foregroundStyle(Color(.systemBackground))
+                            .foregroundStyle(.primary)
                             .font(.title2)
                             .frame()
                             .clipped()
@@ -59,9 +59,8 @@ struct MafiaMenuView: View {
                     .clipped()
                     .overlay {
                         Text("Shop")
-                            .foregroundStyle(Color(.systemBackground))
+                            .foregroundStyle(.primary)
                             .font(.title2)
-                            .frame()
                             .clipped()
                     }
                     .shadow(color: .black.opacity(0.5), radius: 8, x: 0, y: 4)

@@ -152,7 +152,7 @@ struct PlayingView: View {
         }
         .navigationBarBackButtonHidden(true)
         .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
+            ToolbarItem(placement: .automatic) {
                 Button(action: {
                     viewModel.pauseGame()
                     showPauseView = true

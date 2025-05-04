@@ -70,19 +70,13 @@ struct NewsView: View {
                     .padding()
                     .opacity(0.8)
             }
-            .background {
-                Rectangle()
-                    .stroke(Color(.systemBackground).opacity(0.13), lineWidth: 20)
-                    .background(Rectangle().fill(Color(.secondarySystemGroupedBackground).opacity(0.3)))
-                    .clipped()
-            }
+            .background(NewsBackgroundView())
             .onTapGesture {
                 viewModel.continueToNextPhase()
                 showNextScreen = true
             }
         }
         .ignoresSafeArea()
-        .navigationBarHidden(true)
         .navigationDestination(isPresented: $showNextScreen) {
             DiscussionView(viewModel: DiscussionViewModel())
         }
@@ -91,4 +85,15 @@ struct NewsView: View {
 
 #Preview {
     NewsView(viewModel: NewsViewModel())
+}
+struct NewsBackgroundView: View {
+    var body: some View {
+        ZStack {
+            Rectangle()
+                .fill(Color.secondary.opacity(0.3))
+            Rectangle()
+                .stroke(Color.primary.opacity(0.13), lineWidth: 20)
+        }
+        .clipped()
+    }
 }
