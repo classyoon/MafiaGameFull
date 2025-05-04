@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CA4B30CA2DC7157A00C2995F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CA4B30C92DC7157A00C2995F /* .gitignore */; };
+		CA4B30CC2DC7157E00C2995F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CA4B30CB2DC7157E00C2995F /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		CA4B30AD2DC7156E00C2995F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,8 @@
 		CA4B309E2DC7156D00C2995F /* MafiaGameFull.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MafiaGameFull.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA4B30AC2DC7156E00C2995F /* MafiaGameFullTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MafiaGameFullTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA4B30B62DC7156E00C2995F /* MafiaGameFullUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MafiaGameFullUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA4B30C92DC7157A00C2995F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		CA4B30CB2DC7157E00C2995F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +82,8 @@
 		CA4B30952DC7156D00C2995F = {
 			isa = PBXGroup;
 			children = (
+				CA4B30C92DC7157A00C2995F /* .gitignore */,
+				CA4B30CB2DC7157E00C2995F /* README.md */,
 				CA4B30A02DC7156D00C2995F /* MafiaGameFull */,
 				CA4B30AF2DC7156E00C2995F /* MafiaGameFullTests */,
 				CA4B30B92DC7156E00C2995F /* MafiaGameFullUITests */,
@@ -212,6 +221,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA4B30CC2DC7157E00C2995F /* README.md in Resources */,
+				CA4B30CA2DC7157A00C2995F /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
